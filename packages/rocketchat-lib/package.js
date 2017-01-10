@@ -126,6 +126,7 @@ Package.onUse(function(api) {
 	api.addFiles('server/methods/deleteUserOwnAccount.js', 'server');
 	api.addFiles('server/methods/getFullUserData.js', 'server');
 	api.addFiles('server/methods/getRoomRoles.js', 'server');
+	api.addFiles('server/methods/getServerInfo.js', 'server');
 	api.addFiles('server/methods/getUserRoles.js', 'server');
 	api.addFiles('server/methods/joinRoom.coffee', 'server');
 	api.addFiles('server/methods/joinDefaultChannels.coffee', 'server');
@@ -181,6 +182,10 @@ Package.onUse(function(api) {
 	// CLIENT MODELS
 	api.addFiles('client/models/_Base.coffee', 'client');
 	api.addFiles('client/models/Uploads.coffee', 'client');
+
+	// CLIENT VIEWS
+	api.addFiles('client/views/customFieldsForm.html', 'client');
+	api.addFiles('client/views/customFieldsForm.js', 'client');
 
 	api.addFiles('startup/defaultRoomTypes.coffee');
 
